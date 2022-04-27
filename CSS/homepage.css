@@ -1,6 +1,7 @@
 .parent-page {
   min-height: 100vh;
   position: relative;
+  border-bottom: solid 5px rgb(200, 200, 200);
 }
 .child-page {
   min-height: 100vh;

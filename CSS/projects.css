@@ -1,0 +1,42 @@
+#projects {
+  position: relative;
+  z-index: 5;
+  height: 100vh;
+  left: 13rem;
+  width: 87%;
+  padding: 1rem 4rem;
+}
+.projects-header{
+  font-size: 5rem;
+}
+.projects-paragraph {
+  width: 40rem;
+  margin-top: 3rem;
+}
+.portfolio-wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 50vh;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  height: 10rem;
+  width: 10rem;
+  background-color: aliceblue;
+}
+.item1 {
+  background: rgb(125, 145, 236);
+}
+.item2 {
+background: rgb(25, 182, 245);
+}
+.item3 {
+  background: rgb(56, 125, 18);
+}
+.item4 {
+  background: rgb(212, 25, 246);
+}
+.item5 {
+  background: rgb(150, 4, 25);
+}

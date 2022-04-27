@@ -3,6 +3,7 @@
 @import "CSS/nav.css"; 
 @import "CSS/main-menu.css";
 @import "CSS/homepage.css";
+@import "CSS/projects.css";
 :root {
 --hover-light_green-color: rgb(218, 247, 220);
 --hover-darker_green-color: rgb(158, 228, 147);

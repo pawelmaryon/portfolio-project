@@ -16,19 +16,38 @@
   font-size: 1.8rem;
 }
 .contact-btn {
-  width: 12rem;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  width: 16rem;
   margin-top: 8rem;
   padding: 1rem 3rem;
   border: solid 2px var(--hover-fluorescent_blue-color);
-  transition: background-color 2s ;
-}
-.contact-btn-text{
   color: var(--hover-fluorescent_blue-color);
+  cursor: pointer ;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
 }
-.contact-btn-text:hover {
+.contact-btn:hover{
   color: var(--main-text-color);
 }
-.contact-btn:hover {
+.contact-btn::before{
+  transform: skew(20deg);
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  top: 0;
+  left: -1rem;
+  background:var(--hover-fluorescent_blue-color);
+  transition: all 0.5s ease-in-out;
+}
+.contact-btn::before{
+  left: -20rem;
+}
+.contact-btn:hover::before {
+  left: -1rem;
+  color: var(--main-text-color);
   background-color: var(--hover-fluorescent_blue-color);
-  opacity: 0.7;
 }

@@ -15,8 +15,8 @@
   gap: 0.7rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-   "fn cn"
-   "ln em"
+   "fn ln"
+   "em em"
    "ta ta"
    ". s";
    
@@ -25,9 +25,19 @@
 .input-container {
   text-align: center;
 }
+
 .input-item {
   padding:1rem 2rem;
   width: 100%;
+  background: rgb(60, 60, 60);
+  color: rgb(220, 220, 220);
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 0 5px 0px var(--hover-fluorescent_blue-color);
+}
+.input-item::placeholder{
+  color: rgb(180, 180, 180);
+  font-size: 1rem;
 }
 .map-container {
   width: 50%;

@@ -2,28 +2,34 @@
   position: relative;
   z-index: 5;
   height: 100vh;
-  left: 13rem;
-  width: 87%;
+  left: 9rem;
+  width: 97%;
   padding: 1rem 4rem;
+}
+.projects-content-container {
+  margin: 0 4rem;
 }
 .projects-header{
   font-size: 5rem;
 }
 .projects-paragraph {
   width: 40rem;
-  margin-top: 3rem;
+  margin: 2rem 0 7rem;
+  font-size: 1.5rem;
 }
 .portfolio-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
   width: 100%;
   min-height: 50vh;
-  flex-wrap: wrap;
+
+
 }
 
 .portfolio-item {
-  height: 10rem;
-  width: 10rem;
+
   background-color: aliceblue;
+  position: relative;
 }
 .item1 {
   background: rgb(125, 145, 236);
@@ -39,4 +45,72 @@ background: rgb(25, 182, 245);
 }
 .item5 {
   background: rgb(150, 4, 25);
+}
+
+.image-container1{
+  height: 20rem;
+
+  background: url(/Images/Html-css.jpg) no-repeat center center/cover ;
+  overflow: hidden;
+}
+.image-container2{
+  height: 20rem;
+
+  background: url(/Images/js.png) no-repeat center center/cover ;
+  overflow: hidden;
+}
+.image-container3{
+  height: 20rem;
+
+  background: url(/Images/my_profile_image_main.png) no-repeat center center/cover ;
+  overflow: hidden;
+}
+.image-container4{
+  height: 20rem;
+
+  background: url(/Images/portfolio-background.jpg) no-repeat center center/cover ;
+  overflow: hidden;
+}
+.image-container5{
+  height: 20rem;
+
+  background: url(/Images/sample-image.jpg) no-repeat center center/cover ;
+  overflow: hidden;
+}
+.image-container6{
+  height: 20rem;
+ 
+  background: url(/Images/react.png) no-repeat center center/cover ;
+  overflow: hidden;
+}
+.image-container7{
+  height: 20rem;
+
+  background: url(/Images/RoR.png) no-repeat center center/cover ;
+  overflow: hidden;
+}
+.image-container8{
+  height: 20rem;
+  
+  background: url(/Images/Python.svg.png) no-repeat center center/cover ;
+  overflow: hidden;
+}
+.image-container9{
+  height: 20rem;
+  
+  background: url(/Images/coding-image.jpg) no-repeat center center/cover ;
+  overflow: hidden;
+}
+.image-container10{
+  height: 20rem;
+ 
+  background: url(/Images/matrix-coding.jpg) no-repeat center center/cover ;
+  overflow: hidden;
+}
+
+.image-container-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  opacity: 0.2;
 }

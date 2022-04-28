@@ -1,0 +1,37 @@
+#about {
+  min-height: 100vh;
+}
+
+.about-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.description-section {
+  width: 40%;
+  height: 100%;
+  background-color: rgb(80, 80, 80);
+  padding: 1rem 4rem;
+}
+.about-header {
+  font-size: var(--sections_header);
+  margin-bottom: 2rem;
+}
+.about-p-all {
+  margin: 1rem 0;
+}
+.about-p1{
+
+}
+.about-p2 {
+
+}
+.about-p3 {
+
+}
+.visual-element-section {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(100, 100, 100);
+}

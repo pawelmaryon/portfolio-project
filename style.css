@@ -37,9 +37,14 @@ h1 {
   grid-template-areas: "m a a a a a a a a a a a";
 }
 
-
 .app-wrapper {
   grid-area: a;
-  left: 207px;
   width: 100%;
+}
+
+.overflow {
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  opacity: 0.8;
 }

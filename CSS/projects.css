@@ -4,6 +4,8 @@
 }
 .projects-header{
   font-size: var(--sections_header);
+  color: var(--hover-light_blue-color);
+
 }
 .projects-paragraph {
   width: 40rem;

@@ -10,15 +10,19 @@
 
 .description-section {
   width: 45%;
-  background-color: rgb(80, 80, 80);
+  background-color: rgb(60, 60, 60);
   padding: var(--left_aligment_padding);
 }
 .about-header {
   font-size: var(--sections_header);
+  color: var(--hover-light_blue-color);
+
   margin-bottom: 2rem;
 }
 .about-p-all {
   margin: 1rem 0;
+  font-size: 1.5rem;
+
 }
 /* .about-p1{
 
@@ -32,5 +36,5 @@
 .visual-element-section {
   width: 55%;
   height: 70vh;
-  background: url(/Images/coding-image.jpg);
+  background: url(/Images/my_profile_image_main.png) no-repeat center center/cover;
 }

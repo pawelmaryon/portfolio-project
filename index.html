@@ -135,12 +135,29 @@
     </div>
 
     <div id="contact">
-      <form action="">
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="text" placeholder="E-Mail">
-        <input type="text" placeholder="Contact Number">
-      </form>
+      <div class="form-container">
+        <form action="mailto:maryonpawel@gmail.com" method="POST" enctype="multipart/form-data" name="contact-form-name" class="contact-form">
+          <div class="input-container first-Name">
+            <input type="text" placeholder="First Name" class="input-item">
+          </div>
+          <div class="input-container last-Name">
+            <input type="text" placeholder="Last Name" class="input-item">
+          </div>
+          <div class="input-container contact-email">
+            <input type="email" placeholder="E-Mail" class="input-item">
+          </div>
+       
+          <div class="input-container contact-textarea">
+            <textarea  class="input-textarea input-item" rows="10" placeholder="type your message here..."></textarea>
+          </div>
+          <div class="input-container contact-submit-btn">
+            <input type="submit" class="input-item submit-btn" value="Send">
+          </div>
+        </form>
+      </div>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d601.1377672655428!2d-0.3947519825199539!3d51.6596592581276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766ac705548eb7%3A0x834ae12175840095!2sSotheron%20Rd%2C%20Watford%20WD17%202QA!5e0!3m2!1sen!2suk!4v1651156950374!5m2!1sen!2suk" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </div>
   <script src="./script.js"></script>

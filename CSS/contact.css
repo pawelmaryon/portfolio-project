@@ -1,0 +1,60 @@
+#contact {
+  display: flex;
+  min-height: 30vh;
+}
+.form-container {
+  height: 60vh;
+  display: flex;
+  
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+   "fn cn"
+   "ln em"
+   "ta ta"
+   ". s";
+   
+}
+
+.input-container {
+  text-align: center;
+}
+.input-item {
+  padding:1rem 2rem;
+  width: 100%;
+}
+.map-container {
+  width: 50%;
+}
+.map {
+  height: 100%;
+  width: 100%;
+}
+.contact-first-name{
+grid-area: fn;
+}
+.contact-last-name {
+grid-area: ln;
+}
+.contact-email{
+  grid-area: em;
+
+}
+.contact-number {
+  grid-area: cn;
+
+}
+.contact-textarea{
+  grid-area: ta;
+
+}
+.contact-submit-btn{
+  grid-area: s;
+
+}

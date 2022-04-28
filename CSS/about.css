@@ -1,5 +1,5 @@
 #about {
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 .about-wrapper {
@@ -20,7 +20,7 @@
 .about-p-all {
   margin: 1rem 0;
 }
-.about-p1{
+/* .about-p1{
 
 }
 .about-p2 {
@@ -28,7 +28,7 @@
 }
 .about-p3 {
 
-}
+} */
 .visual-element-section {
   width: 55%;
   height: 70vh;

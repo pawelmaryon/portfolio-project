@@ -1,11 +1,8 @@
 #projects {
-  position: relative;
-  z-index: 5;
-  min-height: 100vh;
-  width: 97%;
+
 }
 .projects-content-container {
-  padding: 1rem 4rem;
+  padding: var(--left_aligment_padding);
 }
 .projects-header{
   font-size: var(--sections_header);

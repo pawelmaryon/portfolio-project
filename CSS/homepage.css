@@ -1,3 +1,4 @@
+
 .parent-page {
   min-height: 100vh;
   position: relative;
@@ -10,7 +11,7 @@
 }
 .home-content-container {
   width: 55rem;
-  padding-left: 4rem;
+  padding-left: 6rem;
 }
 .home-paragraph{
   margin: 1rem 0;

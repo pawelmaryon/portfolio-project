@@ -12,6 +12,7 @@
 --hover-fluorescent_blue-color: rgb(84, 242, 242);
 --main-text-color: rgb(150, 150, 150);
 --sections_header: 5rem;
+--left_aligment_padding: 1rem 6rem;
 }
 * {
   margin: 0;
@@ -29,10 +30,15 @@ h1 {
 
 .home-page {
   background-color: rgb(35, 35, 35);
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+  
+  grid-template-areas: "m a a a a a a a a a a a";
 }
 
+
 .app-wrapper {
-  position: relative;
+  grid-area: a;
   left: 207px;
   width: 100%;
 }

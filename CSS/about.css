@@ -9,10 +9,9 @@
 }
 
 .description-section {
-  width: 40%;
-  height: 100%;
+  width: 45%;
   background-color: rgb(80, 80, 80);
-  padding: 1rem 4rem;
+  padding: var(--left_aligment_padding);
 }
 .about-header {
   font-size: var(--sections_header);
@@ -31,7 +30,7 @@
 
 }
 .visual-element-section {
-  width: 60%;
-  height: 100%;
-  background-color: rgb(100, 100, 100);
+  width: 55%;
+  height: 70vh;
+  background: url(/Images/coding-image.jpg);
 }

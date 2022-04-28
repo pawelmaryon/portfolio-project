@@ -11,6 +11,7 @@
 --hover-light_blue-color: rgb(94, 177, 191);
 --hover-fluorescent_blue-color: rgb(84, 242, 242);
 --main-text-color: rgb(150, 150, 150);
+--sections_header: 5rem;
 }
 * {
   margin: 0;
@@ -22,10 +23,16 @@
   box-sizing: border-box;
 }
 h1 {
-  font-size: 5rem;
+  font-size: var(--sections_header);
   color: var(--hover-light_blue-color);
 }
 
 .home-page {
   background-color: rgb(35, 35, 35);
+}
+
+.app-wrapper {
+  position: relative;
+  left: 207px;
+  width: 100%;
 }

@@ -6,12 +6,16 @@
 @import "CSS/projects.css";
 @import "CSS/about.css";
 @import "CSS/contact.css";
+@import "Projects/RollADice/role-a-dice.css";
 :root {
 --hover-light_green-color: rgb(218, 247, 220);
 --hover-darker_green-color: rgb(158, 228, 147);
 --hover-light_blue-color: rgb(94, 177, 191);
+--light-2_blue-color: rgb(64, 140, 154);
 --hover-fluorescent_blue-color: rgb(84, 242, 242);
 --main-text-color: rgb(150, 150, 150);
+--main-dark-text-color: rgb(90, 90, 90);
+--main-light-text-color: rgb(180, 180, 180);
 --sections_header: 5rem;
 --left_aligment_padding: 1rem 6rem;
 }
@@ -50,4 +54,5 @@ h1 {
 }
 .hidden {
   display: none;
+
 }

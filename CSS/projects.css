@@ -112,3 +112,24 @@ background: rgb(25, 182, 245);
   background: rgb(0, 0, 0);
   opacity: 0.3;
 }
+
+.modal-window-background {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(0, 0, 0);
+  opacity: 0.8;
+  z-index: 3;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-window {
+  height: 85vh;
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

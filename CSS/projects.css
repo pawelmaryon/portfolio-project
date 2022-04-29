@@ -48,7 +48,7 @@ background: rgb(25, 182, 245);
 .image-container1{
   height: 20rem;
 
-  background: url(/Images/Html-css.jpg) no-repeat center center/cover ;
+  background: url(/Images/guess-a-number.png) no-repeat center center/cover ;
   overflow: hidden;
 }
 .image-container2{
@@ -66,7 +66,7 @@ background: rgb(25, 182, 245);
 .image-container4{
   height: 20rem;
 
-  background: url(/Images/portfolio-background.jpg) no-repeat center center/cover ;
+  background: url(/Images/roll-a-dice.png) no-repeat center center/cover ;
   overflow: hidden;
 }
 .image-container5{

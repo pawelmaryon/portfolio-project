@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./material-calculator.css">
+    <title>Document</title>
+  </head>
+  <body class="home-page">
+    <menu class="main-menu">
+      <div class="main-menu-top">
+        <h2>P. Maryon</h2>
+
+        <p>Full Stack Developer</p>
+      </div>
+      <div class="menu-nav">
+        <a href="../index.html">Home</a>
+        <a href="../index.html">Projects</a>
+        <a href="../index.html">About</a>
+        <a href="../index.html">Contact</a>
+      </div>
+      <ul class="social-links">
+        <li>
+          <a href=""><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </menu>
+    <div id="ajaxify" class="app-wrapper">
+      <div id="home" class="parent-page">
+        <div class="child-page-calculator">
+          <div class="row calculator-outline">
+            <h2 class="col-sm-12 text-center calculator-header">
+              Material calculator
+            </h2>
+            <form action="">
+            <div class="material-items row col-sm-12">
+              <div class="btn material-parameters material-name">
+                <select name="deckings" id="material-list">
+                  <option value="">--decking type--</option>
+                  <option value="pine-decking">Pine Decking</option>
+                  <option value="larch-decking">Larch Decking</option>
+                  <option value="balau-decking">Balau Decking</option>
+                </select>
+              </div>
+              <div class="material-parameters length dimensions">
+                <p class="mat-lenght">
+                  <input id="calculator_length" class="box-properties m-length" type="number" placeholder="Length">
+                 <br />
+                </p>
+              </div>
+              <div class="material-parameters dimensions">
+                <p class="mat-width">
+                  <input id="calculator_width" class="box-properties m-width" type="number" placeholder="Width">
+                    <br />
+                </p>
+              </div>
+              <div class="material-parameters dimensions">
+                <p class="mat-height">
+                  <input id="calculator_height" class="box-properties m-height" type="number" placeholder="Height">
+                  <br />
+                </p>
+              </div>
+              <div class="material-parameters dimensions">
+                <p class="total-cost">£</p>
+              </div>
+              <div class="material-parameters dimensions">
+                <button class="btn sum-up-btn decking-btn">Calculate</button>
+              </div>
+            </div>
+            <div class="material-items row col-sm-12">
+              <div class="btn material-parameters material-name">
+                <select name="sandstone-patios" id="material-list-patio">
+                  <option value="">--patio type--</option>
+                  <option value="sawn-raj-green">Sawn Raj Green</option>
+                  <option value="riven-mint">Riven Mint</option>
+                  <option value="sawn-kandela-grey">Kandela Grey</option>
+                </select>
+              </div>
+              <div class="material-parameters length dimensions">
+                <p class="mat-lenght">
+                  <input class="box-properties p-length" type="number" placeholder="Length">
+               <br />
+                </p>
+              </div>
+              <div class="material-parameters dimensions">
+                <p class="mat-width">
+                  <input class="box-properties p-width" type="number" placeholder="Width">
+                  <br />
+                </p>
+              </div>
+              <div class="material-parameters dimensions">
+                <select name="pattern" id="material-list" class="p-size">
+                  <option value="">--size--</option>
+                  <option value="300/300">300x300</option>
+                  <option value="300/450">300x450</option>
+                  <option value="300/600">300x600</option>
+                  <option value="600/600">600x600</option>
+                  <option value="600/900">600x900</option>
+                  <option value="4-random">4 random sizes</option>
+                </select>
+              </div>
+              <div class="material-parameters dimensions">
+                <p class="total-cost patio-cost">£</p>
+              </div>
+              <div class="material-parameters dimensions">
+                <button class="btn sum-up-btn patio-btn">Calculate</button>
+              </div>
+            </div>
+            <div class="material-items row col-sm-12">
+              <div class="btn material-parameters material-name">
+                <select name="turfs" id="material-list" class="t-type">
+                  <option value="">--turf type--</option>
+                  <option value="essex-turf">Essex Turf</option>
+                  <option value="medalion-turf">Medalion Turf</option>
+                  <option value="tough-sport-turf">Tough Sport Turf</option>
+                </select>
+              </div>
+              <div class="material-parameters length dimensions">
+                <p class="mat-lenght">
+                  <input class="box-properties t-length" type="number" placeholder="Length">
+                  <br />
+                </p>
+              </div>
+              <div class="material-parameters dimensions">
+                <p class="mat-width">
+                  <input class="box-properties t-width" type="number" placeholder="Width">
+                 <br />
+                </p>
+              </div>
+              <div class="material-parameters dimensions">
+                <p class="mat-height">N/A</p>
+              </div>
+              <div class="material-parameters dimensions">
+                <p class="total-cost turf-cost">£</p>
+              </div>
+              <div class="material-parameters dimensions">
+                <button class="btn sum-up-btn t-btn">Calculate</button>
+              </div>
+            </div>
+            <div class="material-items row col-sm-12">
+              <div class="btn material-parameters material-name">
+                <select name="fencess" id="material-list">
+                  <option value="">--fence type--</option>
+                  <option value="panel-fence">Panel Fence</option>
+                  <option value="horizontal-slatted-fence">
+                    Horizontal Slatted Fence
+                  </option>
+                  <option value="Vertical-slatted-fence">
+                    Vertical Slatted Fence
+                  </option>
+                </select>
+              </div>
+              <div class="material-parameters length dimensions">
+                <p class="mat-lenght">
+                  <input class="box-properties m-length fence-length" type="number" placeholder="Length">
+                 <br />
+                </p>
+              </div>
+              <div class="material-parameters dimensions">
+                <select name="planks" id="material-list">
+                  <option value="">--size--</option>
+                  <option value="19x38-plank">19x38</option>
+                  <option value="25x50">25x50</option>
+                  <option value="19x70">19x70</option>
+                  <option value="19x90">19x90</option>
+                </select>
+              </div>
+              <div class="material-parameters dimensions">
+                <p class="mat-height">
+                  <input class="box-properties m-height fence-height" type="number" placeholder="Height">
+                  <br />
+                </p>
+              </div>
+              <div class="material-parameters dimensions">
+                <p class="total-cost fence-cost">£</p>
+              </div>
+              <div class="material-parameters dimensions">
+                <button class="btn sum-up-btn fence-button">Calculate</button>
+              </div>
+            </div>
+            <div class="material-items row col-sm-12 summary-items">
+              <div class="summary estimated-cost">
+                <p>Estimeted cost</p>
+              </div>
+              <div class="summary total-figure">
+                <p>£0</p>
+              </div>
+              <div class="summary book-now-button">
+                <button class="form-submit-btn">Book Now</button>
+              </div>
+            </div>
+            <h2 class="col-sm-12 text-center calculator-footer">
+              Additional transport costs may apply
+            </h2>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./material-calculator.js"></script>
+  </body>
+</html>

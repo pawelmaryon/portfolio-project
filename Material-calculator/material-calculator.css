@@ -1,0 +1,173 @@
+.child-page-calculator {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator-outline {
+  margin-top: 1rem;
+  text-align: center;
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 2px 17px #888;}
+
+#material-list {
+  width: 100%;
+  border: none;
+  background: transparent;
+  
+}
+#material-list:focus {
+  border: none;
+  outline: none;
+}
+#material-list:active {
+  border: none;
+  outline: none;
+}
+.material-items {
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: center;
+}
+.material-parameters {
+  padding: 5px;
+  box-shadow: 0px 2px 17px #888;
+  margin: 5px;
+  border-radius: 2px;
+}
+.summary {
+  padding: 5px;
+  box-shadow: 0px 2px 17px #888;
+}
+.estimated-cost {
+  background: green;
+  color: black;
+  border-radius: 2px 0 0 2px;
+  width: 20%;
+}
+.total-figure {
+  width: 45%;
+}
+.book-now-button {
+  background: green;
+  border-radius: 0 2px 2px 0;
+  width: 11%;
+  cursor: pointer;
+}
+.dimensions {
+  width: 10%;
+}
+.material-name {
+  width: 20%;
+}
+.summary-items {
+  margin-bottom: 15px;
+}
+.calculator-header {
+  margin: 1rem;
+  font-weight: 700;
+}
+.calculator-footer {
+  margin: 1rem;
+  font-weight: 700;
+}
+#fname {
+  width: fit-content;
+}
+.hidden {
+  display: none;
+}
+.btn-item:hover {
+  background-color: rgb(180, 180, 180);
+  padding: 5px 68px;
+}
+.box-properties {
+  border: none;
+  background-color: inherit;
+  width: fit-content;
+  width: 100%;
+}
+.form-submit-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+}
+.sum-up-btn {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* testing */
+
+label,
+footer {
+  font-family: sans-serif;
+}
+
+label {
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
+select {
+  font-size: 0.9rem;
+  padding: 2px 5px;
+}
+
+footer {
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.output {
+  background: center/cover no-repeat url("/media/cc0-images/hamster.jpg");
+  position: relative;
+}
+/* patio row */
+#material-list-patio {
+  width: 100%;
+  border: none;
+  background: rgb(40, 40, 40);
+  }
+
+#material-list-patio:focus {
+  border: none;
+  outline: none;
+  background: rgb(40, 40, 40);
+}
+
+#material-list-patio:active {
+  border: none;
+  outline: none;
+  background: rgb(40, 40, 40);
+}
+#material-list-patio:hover {
+  background: rgb(40, 40, 40);
+}
+.calculator-header {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+#material-list:focus {
+  border: none;
+  outline: none;
+  background: rgb(40, 40, 40);
+}
+#material-list:active {
+  border: none;
+  outline: none;
+  background: rgb(40, 40, 40);
+}
+#material-list:hover {
+  border: none;
+  outline: none;
+  background: rgb(40, 40, 40);
+}

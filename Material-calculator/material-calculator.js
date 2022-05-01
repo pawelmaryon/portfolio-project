@@ -176,6 +176,41 @@ let addedPrices = 0
   }
 };
 
+
+
+
+
+
+fenceButton.addEventListener("click", function (event) {
+  event.preventDefault()
+  materialCalculations('fence');
+  console.log(`fence cost: ${estimatedCost}`);
+  const updatedEstimatedCost = Number(estimatedCost.textContent);
+  const updatedFenceValue = Number(fenceValue.textContent)
+  const updatedCost = updatedEstimatedCost + updatedFenceValue
+   return estimatedCost.textContent = "£" + updatedCost.toString();
+})
+turfBtn.addEventListener("click", function(event) {
+  event.preventDefault();
+  materialCalculations('turf');
+  console.log(`base cost: ${estimatedCost.textContent}`);
+
+  const updatedEstimatedCost = Number(estimatedCost.textContent);
+  const updatedTurfValue = Number(turfValue.textContent)
+  const updatedCost = updatedEstimatedCost + updatedTurfValue
+  console.log(`final figure ${estimatedCost.textContent}`);
+  return estimatedCost.textContent =  updatedCost.toString();
+});
+patioButton.addEventListener("click", function(event) {
+  event.preventDefault();
+  materialCalculations('patio');
+  console.log(`base cost: ${addedPrices}`);
+  
+  const updatedEstimatedCost = Number(totalCost.textContent.substring(1));
+  const updatedPatioValue = Number(patioValue.textContent);
+  const updatedCost = updatedEstimatedCost + updatedPatioValue
+   return estimatedCost.textContent = updatedCost.toString();
+  });
 deckingButton.addEventListener('click', function (event) {
   event.preventDefault();
   materialCalculations('decking');
@@ -185,35 +220,3 @@ deckingButton.addEventListener('click', function (event) {
   return 
 
 });
-
-patioButton.addEventListener("click", function(event) {
-event.preventDefault();
-materialCalculations('patio');
-console.log(`base cost: ${addedPrices}`);
-
-const updatedEstimatedCost = Number(totalCost.textContent.substring(1));
-const updatedPatioValue = Number(patioValue.textContent);
-const updatedCost = updatedEstimatedCost + updatedPatioValue
- return estimatedCost.textContent = updatedCost.toString();
-});
-
-turfBtn.addEventListener("click", function(event) {
-  event.preventDefault();
-  materialCalculations('turf');
-  console.log(`base cost: ${estimatedCost.textContent}`);
-
-  const updatedEstimatedCost = Number(estimatedCost.textContent.substring(1));
-  const updatedTurfValue = Number(turfValue.textContent.substring(1))
-  const updatedCost = updatedEstimatedCost + updatedTurfValue
-  console.log(`final figure ${estimatedCost.textContent}`);
-  return estimatedCost.textContent =  updatedCost.toString();
-});
-fenceButton.addEventListener("click", function (event) {
-  event.preventDefault()
-  materialCalculations('fence');
-  console.log(`fence cost: ${estimatedCost}`);
-  const updatedEstimatedCost = Number(estimatedCost.textContent.substring(1));
-  const updatedFenceValue = Number(fenceValue.textContent.substring(1))
-  const updatedCost = updatedEstimatedCost + updatedFenceValue
-   return estimatedCost.textContent = "£" + updatedCost.toString();
-})

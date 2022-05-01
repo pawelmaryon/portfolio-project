@@ -183,6 +183,7 @@ let addedPrices = 0
 
 fenceButton.addEventListener("click", function (event) {
   event.preventDefault()
+  fenceButton.setAttribute("disabled", true)
   materialCalculations('fence');
   console.log(`fence cost: ${estimatedCost}`);
   const updatedEstimatedCost = Number(estimatedCost.textContent);
@@ -192,6 +193,7 @@ fenceButton.addEventListener("click", function (event) {
 })
 turfBtn.addEventListener("click", function(event) {
   event.preventDefault();
+  turfBtn.setAttribute("disabled", true)
   materialCalculations('turf');
   console.log(`base cost: ${estimatedCost.textContent}`);
 
@@ -203,6 +205,8 @@ turfBtn.addEventListener("click", function(event) {
 });
 patioButton.addEventListener("click", function(event) {
   event.preventDefault();
+  patioButton.setAttribute("disabled", true)
+
   materialCalculations('patio');
   console.log(`base cost: ${addedPrices}`);
   
@@ -213,6 +217,8 @@ patioButton.addEventListener("click", function(event) {
   });
 deckingButton.addEventListener('click', function (event) {
   event.preventDefault();
+  deckingButton.setAttribute("disabled", true)
+
   materialCalculations('decking');
   console.log(`decking cost: ${estimatedCost.innerHTML}`);
   estimatedCost.textContent = totalCost.textContent

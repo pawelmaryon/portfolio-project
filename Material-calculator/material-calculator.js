@@ -18,6 +18,8 @@ const calculatorHeight = document.getElementById("calculator_height");
 const calculatorWidth = document.getElementById("calculator_width");
 const calculatorLength = document.getElementById("calculator_length");
 const deckingButton = document.querySelector(".decking-btn")
+const updateDeckingButton = document.querySelector(".update-decking-btn")
+
 
 //patio
 const patioLength = document.querySelector(".p-length"); 
@@ -25,6 +27,7 @@ const patioWidth = document.querySelector(".p-width");
 const patioSlabSize = document.querySelector(".p-size");
 const patioValue = document.querySelector(".patio-cost");
 const patioButton = document.querySelector(".patio-btn");
+const updatePatioButton = document.querySelector(".update-patio-btn");
 
 //turf
 const lawnLength = document.querySelector(".t-length");
@@ -32,6 +35,7 @@ const lawnWidth = document.querySelector(".t-width");
 const turfBtn = document.querySelector(".t-btn");
 const turfValue = document.querySelector(".turf-cost");
 const turfType = document.querySelector(".t-type");
+const updateTurfType = document.querySelector(".update-t-btn");
 
 //fence
 
@@ -39,6 +43,7 @@ const fenceLength = document.querySelector(".fence-length");
 const fenceHight = document.querySelector(".fence-height");
 const fenceValue = document.querySelector(".fence-cost");
 const fenceButton = document.querySelector(".fence-button");
+const updateFenceButton = document.querySelector(".update-fence-button");
 
 //estimated cost summary
 
@@ -226,3 +231,16 @@ deckingButton.addEventListener('click', function (event) {
   return 
 
 });
+
+updateDeckingButton.addEventListener("click", (event) => {
+  event.preventDefault()
+})
+updatePatioButton.addEventListener("click", (event) => {
+  event.preventDefault()
+})
+updateTurfType.addEventListener("click", (event) => {
+  event.preventDefault()
+})
+updateFenceButton.addEventListener("click", (event) => {
+  event.preventDefault()
+})

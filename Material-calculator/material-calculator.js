@@ -181,11 +181,6 @@ let addedPrices = 0
   }
 };
 
-
-
-
-
-
 fenceButton.addEventListener("click", function (event) {
   event.preventDefault()
   fenceButton.setAttribute("disabled", true)
@@ -232,15 +227,45 @@ deckingButton.addEventListener('click', function (event) {
 
 });
 
-updateDeckingButton.addEventListener("click", (event) => {
+// Update functionality
+updateFenceButton.addEventListener("click", (event) => {
   event.preventDefault()
-})
-updatePatioButton.addEventListener("click", (event) => {
-  event.preventDefault()
+  materialCalculations('fence');
+  console.log(`fence cost: ${estimatedCost}`);
+  const updatedEstimatedCost = Number(estimatedCost.textContent);
+  const updatedFenceValue = Number(fenceValue.textContent)
+  const updatedCost = updatedEstimatedCost + updatedFenceValue
+   return estimatedCost.textContent = "£" + updatedCost.toString
 })
 updateTurfType.addEventListener("click", (event) => {
   event.preventDefault()
+  materialCalculations('turf');
+  console.log(`base cost: ${estimatedCost.textContent}`);
+
+  const updatedEstimatedCost = Number(estimatedCost.textContent);
+  const updatedTurfValue = Number(turfValue.textContent)
+  const updatedCost = updatedEstimatedCost + updatedTurfValue
+  console.log(`final figure ${estimatedCost.textContent}`);
+  return estimatedCost.textContent =  updatedCost.toString();
 })
-updateFenceButton.addEventListener("click", (event) => {
+updatePatioButton.addEventListener("click", (event) => {
   event.preventDefault()
+
+  materialCalculations('patio');
+  console.log(`base cost: ${addedPrices}`);
+  
+  const updatedEstimatedCost = Number(totalCost.textContent.substring(1));
+  const updatedPatioValue = Number(patioValue.textContent);
+  const updatedCost = updatedEstimatedCost + updatedPatioValue
+   return estimatedCost.textContent = updatedCost.toString();
+})
+
+updateDeckingButton.addEventListener("click", (event) => {
+  event.preventDefault()
+  materialCalculations('decking');
+  console.log(`decking cost: ${estimatedCost.innerHTML}`);
+  estimatedCost.textContent = totalCost.textContent
+  addedPrices = estimatedCost.textContent
+  return 
+
 })

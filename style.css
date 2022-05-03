@@ -7,6 +7,8 @@
 @import "CSS/about.css";
 @import "CSS/contact.css";
 @import "Projects/RollADice/role-a-dice.css";
+
+
 :root {
 --hover-light_green-color: rgb(218, 247, 220);
 --hover-darker_green-color: rgb(158, 228, 147);
@@ -55,4 +57,49 @@ h1 {
 .hidden {
   display: none;
 
+}
+/* media queries */
+
+@media(min-width: 374px) {
+  .home-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-menu {
+    position: fixed  ;
+    top: 0px;
+    text-align: center;
+    border-bottom: solid 2px;
+    z-index: 6;
+    width: 100vw;
+  }
+  .mobile-menu h2 {
+    background: rgba(10, 10, 10, 0.2);
+    padding: 1rem 0;
+
+  }
+  .main-menu{
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 70vh;
+  }
+  .social-links {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .social-links li {
+    padding: 0.75rem 4rem;
+    border: solid 2px var(--main-text-color);
+  }
+  .home-content-container {
+    padding: 1rem;
+    text-align: center;
+  }
+  .home-content-container h1 {
+    font-size: 1.75rem;
+  }
+  .home-content-container p {
+    display: none;
+  }
 }

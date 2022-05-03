@@ -60,7 +60,7 @@ h1 {
 }
 /* media queries */
 
-@media(min-width: 374px) {
+@media(max-width: 576px) {
   .home-page {
     display: flex;
     flex-direction: column;
@@ -97,9 +97,80 @@ h1 {
     text-align: center;
   }
   .home-content-container h1 {
-    font-size: 1.75rem;
+    font-size: 3rem;
   }
   .home-content-container p {
     display: none;
   }
+  .projects-content-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  } 
+  .contact-btn {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    width: 16rem;
+    margin: 0 auto;
+    margin-top: 8rem;
+    padding: 1rem 3rem;
+    border: solid 2px var(--hover-fluorescent_blue-color);
+    color: var(--hover-fluorescent_blue-color);
+    cursor: pointer ;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+  }
+  .projects-paragraph {
+    width: 100%;
+  }
+  .projects-header {
+    font-size: 3rem;
+  }
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-header {
+    font-size: 3rem;
+  }
+  .description-section {
+    width:100%;
+    padding: 1rem;
+  }
+  .visual-element-section {
+    width: 100%;
+  }
+  #contact {
+    flex-direction: column;
+  }
+  .form-container {
+    padding: 1rem;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-form {
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+     "fn ln"
+     "em em"
+     "ta ta"
+     "s s";
+     
+  }
+  .contact-submit-btn{
+    grid-area: s;
+  }
+  .map-container {
+    width: 100vw;
+    height: 100vh;
+}
+}
+
+@media(max-width: 768px) {
+  
 }

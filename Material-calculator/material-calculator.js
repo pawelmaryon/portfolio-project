@@ -30,6 +30,7 @@ const patioButton = document.querySelector(".patio-btn");
 const updatePatioButton = document.querySelector(".update-patio-btn");
 
 //turf
+const turfMaterialList = document.querySelector(".turf-material-list")
 const lawnLength = document.querySelector(".t-length");
 const lawnWidth = document.querySelector(".t-width");
 const turfBtn = document.querySelector(".t-btn");
@@ -38,12 +39,13 @@ const turfType = document.querySelector(".t-type");
 const updateTurfType = document.querySelector(".update-t-btn");
 
 //fence
-
+const fenceMaterialList = document.querySelector(".fence-material-list-selection");
 const fenceLength = document.querySelector(".fence-length");
 const fenceHight = document.querySelector(".fence-height");
 const fenceValue = document.querySelector(".fence-cost");
 const fenceButton = document.querySelector(".fence-button");
 const updateFenceButton = document.querySelector(".update-fence-button");
+const fenceSizeList = document.getElementById("fence-size-list")
 
 //estimated cost summary
 
@@ -56,6 +58,12 @@ let addedPrices = 0
       const widthValue = Number(calculatorWidth.value);
       const heightValue = Number(calculatorHeight.value);
       const lengthValue = Number(calculatorLength.value);
+      console.log(`decking width value: ${widthValue}`);
+      console.log(typeof widthValue);
+      console.log(`decking hiegth value: ${heightValue}`);
+      console.log(typeof heightValue);
+      console.log(`decking length value: ${lengthValue}`);
+      console.log(typeof lengthValue);
 
       let totalValue = lengthValue * widthValue;
       if (materialList.value === "pine-decking") {
@@ -72,7 +80,11 @@ let addedPrices = 0
       break;
       case 'patio':
         const patioWidthValue = Number(patioWidth.value);
+        console.log(`Patio width: ${patioWidthValue}`);
+        console.log(typeof patioWidthValue);
         const patioLengthValue = Number(patioLength.value);
+        console.log(`Patio Length: ${patioLengthValue}`);
+        console.log(typeof patioLengthValue);
         let patioArea = patioWidthValue * patioLengthValue
         
         if (materialListPatio.value === "sawn-raj-green") {
@@ -150,6 +162,11 @@ let addedPrices = 0
     case 'turf':
       const lawnWidthValue = Number(lawnWidth.value);
       const lawnLengthValue = Number(lawnLength.value)
+      console.log("Lawn width: " + lawnWidthValue);
+      console.log(typeof lawnWidthValue);
+      console.log("Lawn Length: " +lawnLengthValue);
+      console.log(typeof lawnLengthValue);
+
       let lawnArea = (lawnWidthValue * lawnLengthValue)
       console.log(lawnArea);
       switch (turfType.value) {
@@ -172,24 +189,50 @@ let addedPrices = 0
       console.log(typeof turfValue);
       break;
     case 'fence':
-      const fenceLenghtValue = Number(fenceLength.value)
-      const fenceHeightValue = Number(fenceHight.value)
-      let fenceTotal = (fenceLenghtValue + fenceHeightValue)*90
-      fenceValue.textContent = fenceTotal.toString();
+      const fLV = fenceLength.value
+      const fHV = fenceHight.value
+      console.log(`fLV: ${typeof fLV}`);
+      console.log(`fHV: ${fHV}`);
+      const fenceLenghtValue = Number(fLV)
+      const fenceHeightValue = Number(fHV)
+      console.log("fence length: " + typeof fenceLenghtValue.value);
+      console.log("fence length: " + typeof fenceHeightValue.value);
+      console.log("fence length: " + typeof fenceLength.value);
+      console.log("fence Height: " + typeof fenceHight.value);
+      let fenceTotal = (fenceLenghtValue * fenceHeightValue)
       console.log(`fence inner value: ${fenceValue.textContent}`);
-      break;
+      if (fenceMaterialList.value === "Panel Fence") {
+        if (fenceSizeList.value === "19x38") {
+          fenceTotal = fenceTotal * 250
+        } else if (fenceSizeList.value === "25x50") {
+          fenceTotal = fenceTotal * 240
+        } else if (fenceSizeList.value === "19x70") {
+          fenceTotal = fenceTotal * 225
+        } else if (fenceSizeList.value === "19x90") {
+          fenceTotal = fenceTotal * 220
+        } else {
+          patioArea = "--N/A--"
+        }
+      }
+      fenceValue.textContent = fenceTotal.toString();
+      
+      
+    break;
   }
 };
 
 fenceButton.addEventListener("click", function (event) {
   event.preventDefault()
-  fenceButton.setAttribute("disabled", true)
   materialCalculations('fence');
   console.log(`fence cost: ${estimatedCost}`);
   const updatedEstimatedCost = Number(estimatedCost.textContent);
   const updatedFenceValue = Number(fenceValue.textContent)
   const updatedCost = updatedEstimatedCost + updatedFenceValue
-   return estimatedCost.textContent = "£" + updatedCost.toString();
+  if (fenceMaterialList.value)
+  fenceButton.setAttribute("disabled", true)
+  console.log("**********************************************");
+
+  return estimatedCost.textContent = "£" + updatedCost.toString();
 })
 turfBtn.addEventListener("click", function(event) {
   event.preventDefault();
@@ -201,6 +244,8 @@ turfBtn.addEventListener("click", function(event) {
   const updatedTurfValue = Number(turfValue.textContent)
   const updatedCost = updatedEstimatedCost + updatedTurfValue
   console.log(`final figure ${estimatedCost.textContent}`);
+  console.log("**********************************************");
+
   return estimatedCost.textContent =  updatedCost.toString();
 });
 patioButton.addEventListener("click", function(event) {
@@ -208,11 +253,14 @@ patioButton.addEventListener("click", function(event) {
   patioButton.setAttribute("disabled", true)
 
   materialCalculations('patio');
-  console.log(`base cost: ${addedPrices}`);
+  console.log(`base cost: ${estimatedCost.textContent}`);
   
   const updatedEstimatedCost = Number(totalCost.textContent.substring(1));
   const updatedPatioValue = Number(patioValue.textContent);
   const updatedCost = updatedEstimatedCost + updatedPatioValue
+  console.log("**********************************************");
+  console.log(`updated patio value: ${estimatedCost.textContent = updatedCost.toString()}`);
+
    return estimatedCost.textContent = updatedCost.toString();
   });
 deckingButton.addEventListener('click', function (event) {
@@ -220,9 +268,13 @@ deckingButton.addEventListener('click', function (event) {
   deckingButton.setAttribute("disabled", true)
 
   materialCalculations('decking');
-  console.log(`decking cost: ${estimatedCost.innerHTML}`);
+  console.log(`decking cost: ${estimatedCost.textContent}`);
   estimatedCost.textContent = totalCost.textContent
+  console.log(`decking cost 2 : ${estimatedCost.textContent}`);
+
   addedPrices = estimatedCost.textContent
+  console.log("**********************************************");
+
   return 
 
 });
@@ -235,6 +287,8 @@ updateFenceButton.addEventListener("click", (event) => {
   const updatedEstimatedCost = Number(estimatedCost.textContent);
   const updatedFenceValue = Number(fenceValue.textContent)
   const updatedCost = updatedEstimatedCost + updatedFenceValue
+  console.log("**********************************************");
+
    return estimatedCost.textContent = "£" + updatedCost.toString
 })
 updateTurfType.addEventListener("click", (event) => {
@@ -246,6 +300,8 @@ updateTurfType.addEventListener("click", (event) => {
   const updatedTurfValue = Number(turfValue.textContent)
   const updatedCost = updatedEstimatedCost + updatedTurfValue
   console.log(`final figure ${estimatedCost.textContent}`);
+  console.log("**********************************************");
+
   return estimatedCost.textContent =  updatedCost.toString();
 })
 updatePatioButton.addEventListener("click", (event) => {
@@ -257,6 +313,8 @@ updatePatioButton.addEventListener("click", (event) => {
   const updatedEstimatedCost = Number(totalCost.textContent.substring(1));
   const updatedPatioValue = Number(patioValue.textContent);
   const updatedCost = updatedEstimatedCost + updatedPatioValue
+  console.log("**********************************************");
+
    return estimatedCost.textContent = updatedCost.toString();
 })
 
@@ -265,6 +323,8 @@ updateDeckingButton.addEventListener("click", (event) => {
   materialCalculations('decking');
   console.log(`decking cost: ${estimatedCost.innerHTML}`);
   estimatedCost.textContent = totalCost.textContent
+  console.log(`decking cost updated : ${estimatedCost.textContent}`);
+  console.log("**********************************************");
   addedPrices = estimatedCost.textContent
   return 
 

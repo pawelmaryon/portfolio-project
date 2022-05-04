@@ -59,7 +59,7 @@ h1 {
 
 }
 /* media queries */
-
+/* maximal values  */
 @media(max-width: 576px) {
   .home-page {
     display: flex;
@@ -111,7 +111,7 @@ h1 {
     z-index: 1;
     position: relative;
     text-align: center;
-    width: 16rem;
+    width: 100%;
     margin: 0 auto;
     margin-top: 8rem;
     padding: 1rem 3rem;
@@ -120,6 +120,9 @@ h1 {
     cursor: pointer ;
     overflow: hidden;
     transition: all 1s ease-in-out;
+  }
+  .contact-btn::before{
+    left: -55rem;
   }
   .projects-paragraph {
     width: 100%;
@@ -172,5 +175,7 @@ h1 {
 }
 
 @media(max-width: 768px) {
-  
+
 }
+/* minimal values  */
+@media (min-width: 576px) { }

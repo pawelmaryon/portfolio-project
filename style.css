@@ -231,6 +231,44 @@ h1 {
     height: 100vh;
 }
 }
+@media(max-width: 820px) {
+  #projects {
+    width: 100%;
+    margin-left: 2.25rem;    
+  }
+  .home-content-container {
+    padding: 0;
+    width: 94%;
+    margin-left: 2.25rem;
+  }
+  .home-page {
+    grid-template-areas: "m m a a a a a a a a a a";
+  }
+  .main-menu {
+   height: 121vh;
+  }
+  .contact-form {
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+     "fn ln"
+     "em em"
+     "ta ta"
+     "s s";
+  }
+  .projects-content-container{
+    padding: 0;
+  }
+  .projects-header {
+    margin-top: 3rem;
+  }
+  .description-section {
+    padding: 0;
+    width: 94%;
+    margin-left: 2.25rem;
+  }
+}
 
 /* minimal values  */
 @media (min-width: 576px) { }

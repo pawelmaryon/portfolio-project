@@ -64,12 +64,21 @@ h1 {
 
 
 @media (max-width: 1024px) {
+ 
+  .main-menu {
+    height: 121vh;
+  }
+  .child-page {
+    margin-left: 1.75rem;
+  }
   .h1-header {
     font-size: 3rem;
     text-align: center;
+
   }
   .home-paragraph {
     text-align: center;
+    margin: 3rem 0;
   }
   .contact-btn {
     margin: 8rem auto 0 auto;
@@ -78,6 +87,10 @@ h1 {
   }
   .contact-btn::before{
     left: -55rem;
+  }
+  #projects {
+    width: 91%;
+    margin-left: 5.75rem;
   }
   .projects-header {
     font-size: 3rem;
@@ -95,6 +108,9 @@ h1 {
     text-align: center;
     padding-right: 0;
   }
+  .projects-paragraph {
+    width: 100%;
+  }
   .about-header {
     text-align: center;
     font-size: 3rem;
@@ -109,9 +125,18 @@ h1 {
     flex-direction: column;
   }
   .form-container {
-    width: 100%;
-    justify-content: flex-end;
-    padding-right: 3rem;
+    width: 108%;
+    justify-content: center;
+
+    height: 85vh;
+  }
+  .contact-form {
+    grid-template-areas:
+     "fn ln"
+     "em em"
+     "ta ta"
+     "s s";
+     
   }
   .map-container {
     width: 100%;
@@ -342,6 +367,9 @@ h1 {
   .description-section {
     margin: 0;
   }
+}
+@media(max-width: 412px) {
+
 }
 @media(max-width: 280px) {
   .main-menu {

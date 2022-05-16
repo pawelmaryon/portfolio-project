@@ -327,6 +327,22 @@ h1 {
     height: 100vh;
 }
 }
+@media(max-width: 540px) {
+  .home-content-container {
+    width: 100%;
+    margin: 0;
+  }
+  #projects {
+    margin: 0;
+  }
+  .portfolio-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .description-section {
+    margin: 0;
+  }
+}
 
 
 

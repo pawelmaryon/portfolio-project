@@ -1,67 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
-
-@import "CSS/nav.css"; 
-@import "CSS/main-menu.css";
-@import "CSS/homepage.css";
-@import "CSS/projects.css";
-@import "CSS/about.css";
-@import "CSS/contact.css";
-@import "Projects/RollADice/role-a-dice.css";
-
-
-
-:root {
---hover-light_green-color: rgb(218, 247, 220);
---hover-darker_green-color: rgb(158, 228, 147);
---hover-light_blue-color: rgb(94, 177, 191);
---light-2_blue-color: rgb(64, 140, 154);
---hover-fluorescent_blue-color: rgb(84, 242, 242);
---main-text-color: rgb(150, 150, 150);
---main-dark-text-color: rgb(90, 90, 90);
---main-light-text-color: rgb(180, 180, 180);
---sections_header: 5rem;
---left_aligment_padding: 1rem 6rem;
-}
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  color: var(--main-text-color);
-  font-family: 'Montserrat', sans-serif;
-  box-sizing: border-box;
-}
-h1 {
-  font-size: var(--sections_header);
-  color: var(--hover-light_blue-color);
-}
-
-.home-page {
-  background-color: rgb(35, 35, 35);
-  grid-template-columns: repeat(12, 1fr);
-  display: grid;
-  
-  grid-template-areas: "m a a a a a a a a a a a";
-}
-
-.app-wrapper {
-  grid-area: a;
-  width: 100%;
-}
-
-.overflow {
-  height: 100%;
-  width: 100%;
-  background: rgb(0, 0, 0);
-  opacity: 0.8;
-}
-.hidden {
-  display: none;
-
-}
-/* media queries */
-/* maximal values  */
-
 
 @media (max-width: 1024px) {
   .h1-header {
@@ -231,6 +167,3 @@ h1 {
     height: 100vh;
 }
 }
-
-/* minimal values  */
-@media (min-width: 576px) { }

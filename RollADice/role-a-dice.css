@@ -180,3 +180,8 @@ main {
     top:35rem;
   }
 }
+@media(max-width: 912px) {
+  .main-roll-a-dice {
+    height: 90rem;
+  }
+}

@@ -154,6 +154,20 @@ main {
 }
 
 /* media */
+@media(max-width: 1200px) {
+  .main-roll-a-dice {
+    flex-direction: column;
+  }
+  .dice {
+    left: 17%;
+    top: 25.5rem;
+  }
+}
+@media(max-width: 912px) {
+  .main-roll-a-dice {
+    height: 90rem;
+  }
+}
 @media(max-width: 820px) {
   .main-roll-a-dice {
     display: flex;
@@ -180,8 +194,5 @@ main {
     top:35rem;
   }
 }
-@media(max-width: 912px) {
-  .main-roll-a-dice {
-    height: 90rem;
-  }
-}
+
+

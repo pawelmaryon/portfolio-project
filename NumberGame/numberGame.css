@@ -105,7 +105,25 @@ h1 {
 .guess-game-wrapper {
   padding: 2rem;
 }
-@media (max-width: 375px) {
+@media(max-width:540px) {
+  .guess-header h1 {
+    font-size: 3rem;
+  }
+  .guess {
+    width: 13rem;
+  }
+  .number {
+    padding: 0;
+    width: 11rem;
+  }
+  .right p{
+    font-size: 1.5rem;
+  }
+  .message {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 420px) {
   .again {
     top: 7rem;
     left: 0;
@@ -113,6 +131,9 @@ h1 {
   }
   .guess-game-wrapper {
     margin-top: 2rem;
+  }
+  .between {
+    top: 17rem;
   }
   .guess {
     font-size: 3rem;

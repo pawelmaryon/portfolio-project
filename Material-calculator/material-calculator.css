@@ -171,3 +171,14 @@ footer {
   outline: none;
   background: rgb(40, 40, 40);
 }
+
+/* media */
+
+@media(max-width:1024px) {
+  .calculator-outline {
+    width: 72vw;
+  }
+  .calculator-header {
+    padding-top: 2rem;
+  }
+}

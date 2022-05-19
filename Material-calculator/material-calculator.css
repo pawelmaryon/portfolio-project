@@ -182,3 +182,43 @@ footer {
     padding-top: 2rem;
   }
 }
+@media(max-width:540px) {
+  .child-page-calculator {
+    margin-top: 33rem;
+  }
+  .material-items {
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  .material-name {
+    width: 100%;
+  }
+  .dimensions {
+  width: 100%;
+  }
+  /* .material-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "mt mt mt mt mt mt mt "
+    "nf nf nf nf nf nf"
+    "cl cl cl up up up"
+    "to to to to to to";
+  }
+  .grid-name {
+    grid-area: mt;
+  }
+  .grid-dimentions {
+    grid-area: nf;
+  }
+  .grid-calculate {
+    grid-area: cl;
+  }
+  .grid-update {
+    grid-area: up;
+  }
+  .grid-total-item {
+    grid-area: to;
+  } */
+}

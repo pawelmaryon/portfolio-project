@@ -182,7 +182,15 @@ footer {
     padding-top: 2rem;
   }
 }
+@media(max-width:768px) {
+  .child-page-calculator {
+    width: 88vw;
+  }
+}
 @media(max-width:540px) {
+  .calculator-header {
+    font-size: 2rem;
+  }
   .child-page-calculator {
     margin-top: 33rem;
   }
@@ -196,6 +204,18 @@ footer {
   }
   .dimensions {
   width: 100%;
+  }
+  .calculator-outline {
+    box-shadow: none;
+  }
+  .parent-page {
+    border: none;
+  }
+  .summary {
+    width: 100%;
+  }
+  .btn {
+    font-size: 1rem;
   }
   /* .material-grid {
     display: grid;

@@ -10,9 +10,9 @@
 }
 
 .description-section {
-  width: 45%;
+  width: 80%;
   background-color: rgb(40, 40, 40);
-  padding: var(--left_aligment_padding);
+  padding: 1rem 5rem;
 }
 .about-header {
   font-size: var(--sections_header);
@@ -22,7 +22,7 @@
 }
 .about-p-all {
   margin: 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 
 }
 /* .about-p1{
